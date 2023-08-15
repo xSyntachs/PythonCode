@@ -67,8 +67,9 @@ def main():
         print("Bitte installieren Sie yt-dlp.")
         return
 
-    keyboard.add_hotkey(HOTKEY, download_video)
-    keyboard.wait()
+    while True:
+        keyboard.add_hotkey(HOTKEY, download_video)
+        keyboard.wait()
 
 if __name__ == "__main__":
     main()
